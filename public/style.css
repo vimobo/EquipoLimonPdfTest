@@ -1,0 +1,31 @@
+body {
+    color: rgb(0, 255, 13);
+    background-color: rgb(112, 63, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+div {
+    background-color: rgba(30, 0, 37, 0.581);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.5em;
+    text-align: start;
+    margin: 1em;
+    border: 1px solid black;
+    min-width: 20vw;
+}
+
+a {
+    text-align: center;
+    min-width: 200px;
+    border: 1px solid wheat;
+    padding: 1em;
+    list-style: none;
+    color: rgb(0, 255, 13);
+    text-decoration:none;
+}
