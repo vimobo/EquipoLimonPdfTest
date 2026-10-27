@@ -1,6 +1,6 @@
-<h1>Bienvenido a la biblioteca Tus libros</h1>
+<h1>Equipo limón Cumpleaños Oficial</h1>
 
-<p>¡Encuentra tu próxima lectura!</p>
+<p>Introduce tu próxima victima</p>
 
 <nav>
     <div>

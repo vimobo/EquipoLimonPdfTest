@@ -1,31 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    color: rgb(0, 255, 13);
-    background-color: rgb(112, 63, 3);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f0e8, #e4e9df);
+    color: #333;
+    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+
+    padding: 20px;
 }
 
-div {
-    background-color: rgba(30, 0, 37, 0.581);
+h1 {
+    color: #315c45;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+body > p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+form p {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding: 0.5em;
-    text-align: start;
-    margin: 1em;
-    border: 1px solid black;
-    min-width: 20vw;
+    gap: 8px;
+    margin-bottom: 20px;
 }
 
-a {
-    text-align: center;
-    min-width: 200px;
-    border: 1px solid wheat;
-    padding: 1em;
-    list-style: none;
-    color: rgb(0, 255, 13);
-    text-decoration:none;
+label {
+    font-weight: bold;
+    color: #315c45;
+    font-size: 0.95rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #4d8062;
+    box-shadow: 0 0 0 3px rgba(77, 128, 98, 0.15);
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: #315c45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #244632;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 2em;
+    font-style: oblique;
 }
