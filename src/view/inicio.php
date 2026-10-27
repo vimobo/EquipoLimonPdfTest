@@ -4,22 +4,22 @@
 
 <nav>
     <div>
+        <form action="PdfController.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <a href="?action=libros">
-            Ver libros
-        </a>
-        <a href="?action=libro&id">
-            Ver libro por id
-        </a>
+            <br><br>
 
-        <a href="?action=disponible">
-            Ver libros disponibles
-        </a>
-        <a href="?action=autor&id=">
-            Ver autor por id
-        </a>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
 
+            <br><br>
 
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" required>
 
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </nav>
