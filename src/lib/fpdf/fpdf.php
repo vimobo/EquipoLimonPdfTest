@@ -6,6 +6,9 @@
 * Date:    2026-05-31                                                          *
 * Author:  Olivier Plathey                                                     *
 *******************************************************************************/
+namespace lib\fpdf;
+
+use Exception;
 
 class FPDF
 {
