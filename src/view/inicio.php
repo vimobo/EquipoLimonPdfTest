@@ -20,6 +20,10 @@
                 <input type="number" id="edad" name="edad" min="0" required>
             </p>
 
+            <p>
+                <label>
+            </p>
+
             <button type="submit">Enviar</button>
         </form>
     </div>
