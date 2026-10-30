@@ -41,8 +41,8 @@ class PdfController
         $this->fpdf->Cell(0, 0, $this->setUtf8($edad . " años de parte del equipo limon."), false, true);
 
         $this->fpdf->SetFont('Arial', 'B', 12);
-        $this->fpdf->SetFillColor(255, 255, 0);
-        $this->fpdf->SetTextColor(255, 255, 255);
+        $this->fpdf->SetFillColor(0, 0, 0);
+        $this->fpdf->SetTextColor(200, 200, 200);
 
         $this->fpdf->Ln(20);
         $this->fpdf->Cell(60, 10, 'Nombre', 1, 0, 'C', true);
