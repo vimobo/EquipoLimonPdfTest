@@ -30,10 +30,11 @@ class PdfController {
 
     public function generarPdf(string $nombre, string $apellido, int $edad) : void {
         $this->fpdf->addPage();
-        $this->fpdf->SetFont('Arial', 'B', 16);    
-        $this->fpdf->Cell(40, 10, $this->setUtf8($nombre), false, true);
-        $this->fpdf->Cell(40, 10, $this->setUtf8($apellido), false, true);
-        $this->fpdf->Cell(40, 10, $edad, 0, 1);
+        $this->fpdf->SetFont('Arial', 'B', 16);
+        $this->fpdf->Image(__DIR__ . "/limon.png", 30, 5, 33);
+        $this->fpdf->Cell(120,20,$this->setUtf8("Equipo Limón"),false, "center", true);
+        $this->fpdf->Cell(40, 80, $this->setUtf8("Hola, ".$nombre." ".$apellido. " te queremos felicitar tu cumpleaños de "), false, true);
+        $this->fpdf->Cell(0, 0, $this->setUtf8($edad." años de parte del equipo limon."), false, true);
         $this->fpdf->Output();
     }
 
